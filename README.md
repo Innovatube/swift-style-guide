@@ -10,9 +10,10 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
 
 ## Todo
 
-- [ ] Rules for *Memory Management*
-- [ ] Rules for *Xcode build time enhancement*
-- [ ] Make `swiftlint.yml` containing rules from this guide
+- [ ] Make rules for *Memory Management*
+- [ ] Make rules for *Xcode build time enhancement*
+- [ ] Make rules for `RxSwift` / `ReactiveSwift` codes
+- [ ] Make `swiftlint.yml` containing rules from this guide for static analyzing the codes
 
 ## Table Of Contents
 
@@ -35,9 +36,9 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
     - [15. Documentation/Comments](#15-documentationcomments)
 - [Other Guides](#other-guide)
 
-`⚠️` Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
+⚠️ Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
 
-`🔗` Rules that have been implemented in `swiftlint.yml`
+🔗 Rules that have been implemented in `swiftlint.yml`
 
 ## 0. Correctness
 

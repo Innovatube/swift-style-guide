@@ -38,12 +38,12 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
 
 ⚠️ Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
 
-🔗 Rules that have been implemented in `swiftlint.yml`
+🔗 Rules that have been implemented in `swiftlint.yml` or will be warned by Xcode by default
 
 ## 0. Correctness
 
-* **0.1.** Strive to make your code compile without warnings. This rule informs many style decisions such as using #selector types instead of string literals.
-* **0.2.** Use a [static analyzer](http://stackoverflow.com/questions/49716/what-is-static-code-analysis) or [linter](http://stackoverflow.com/questions/8503559/what-is-linting) to enforce Swift style and conventions, such as [SwiftLint](https://github.com/realm/SwiftLint) *(recommended)* or [Tailor](https://github.com/sleekbyte/tailor). Please try to install SwiftLint via [CocoaPods](cocoapods.org) so that other team members don't need to install it on their computer.
+* **0.1.** Strive to **make your code compile without warnings**. This rule informs many style decisions such as using `#selector` types instead of string literals.
+* **0.2.** **Use a [static analyzer](http://stackoverflow.com/questions/49716/what-is-static-code-analysis) or [linter](http://stackoverflow.com/questions/8503559/what-is-linting)** to enforce Swift style and conventions, such as [SwiftLint](https://github.com/realm/SwiftLint) *(recommended)* or [Tailor](https://github.com/sleekbyte/tailor). Please try to install SwiftLint via [CocoaPods](cocoapods.org) so that other team members don't need to install it on their computer.
 
 ## 1. Code Formatting
 
@@ -798,7 +798,7 @@ func handleDigit(_ digit: Int) throws {
 
 * **8.1.** The only time you should be using implicitly unwrapped optionals is with `@IBOutlet`s. In every other case, it is better to use a non-optional or regular optional property. Yes, there are cases in which you can probably "guarantee" that the property will never be `nil` when used, but it is better to be safe and consistent. Similarly, don't use force unwraps.
 
-* **8.2.** Don't use `as!` or `try!`.
+* **8.2.** 🔗 Don't use `as!` or `try!`.
 
 * **8.3.** If you don't plan on actually using the value stored in an optional, but need to determine whether or not this value is `nil`, explicitly check this value against `nil` as opposed to using `if let` syntax.
 

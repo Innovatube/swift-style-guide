@@ -35,9 +35,9 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
     - [15. Documentation/Comments](#15-documentationcomments)
 - [Other Guides](#other-guide)
 
-⚠️ : Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
+`⚠️` Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
 
-🔗 : Rules that have been implemented in `swiftlint.yml`
+`🔗` Rules that have been implemented in `swiftlint.yml`
 
 ## 0. Correctness
 

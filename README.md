@@ -14,7 +14,6 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
 - [ ] Rules for *Xcode build time enhancement*
 - [ ] Make `swiftlint.yml` containing rules from this guide
 
-
 ## Table Of Contents
 
 - [Swift Style Guide](#swift-style-guide)
@@ -35,6 +34,10 @@ This guide is mainly edited from [LinkedIn's Swift Style Guide](https://github.c
     - [14. Using `guard` Statements](#14-using-guard-statements)
     - [15. Documentation/Comments](#15-documentationcomments)
 - [Other Guides](#other-guide)
+
+⚠️ : Rules that haven't been implemented in `swiftlint.yml`. You should care more about these rules.
+
+🔗 : Rules that have been implemented in `swiftlint.yml`
 
 ## 0. Correctness
 
@@ -1079,6 +1082,7 @@ In general, if a method can "fail", and the reason for the failure is not immedi
 ## 14. Using `guard` Statements
 
 * **14.1.** In general, we prefer to use an "early return" strategy where applicable as opposed to nesting code in `if` statements. Using `guard` statements for this use-case is often helpful and can improve the readability of the code.
+
 <details>
 <summary>Examples</summary>
 
